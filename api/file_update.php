@@ -25,7 +25,7 @@ if(empty($file)===true)
         print(json_encode(array("message"=>"Update successful without file!")));
     }
     else{
-        print(json_encode(array("message"=>"Update failed! ".mysqli_error($this->conn))));
+        print(json_encode(array("message"=>"Update failed! ".mysqli_error($api_obj->conn))));
     }
 }
 else
@@ -37,7 +37,7 @@ else
         print(json_encode(array("message"=>"Update successful with file!")));
     }
     else{
-        print(json_encode(array("message"=>"Update failed! ".mysqli_error($this->conn))));
+        print(json_encode(array("message"=>"Update failed! ".mysqli_error($api_obj->conn))));
     }
 
 }
