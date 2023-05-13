@@ -29,7 +29,7 @@ else
     }
     else
     {
-        print(json_encode(array("message"=>"Some error occurred! ".mysqli_error($this->conn))));
+        print(json_encode(array("message"=>"Some error occurred! ".mysqli_error($api_obj->conn))));
     }
 }
 
